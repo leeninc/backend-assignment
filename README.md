@@ -20,7 +20,7 @@ The API should have at least 3 endpoints:
   - ```json
     {
       "country_code": "US",
-      "state": "California",
+      "state": "California", \\ state1 and state2 combined ex. State1, State2 if both are present
       "city": "San Francisco",
       "postal_code": "94107",
       "timezone": "America/Los_Angeles",
@@ -35,14 +35,13 @@ The API should have at least 3 endpoints:
 - GET `/subscribe/{email}` - returns the following geo information for the given email address
   - ``` json
     {
-      country_code: "US"
-      timezone: "America/Los_Angeles"
+      "country_code": "US"
+      "timezone": "America/Los_Angeles"
     }
-
 - Use the following file [geo-city-ipv4.csv.gz](geo-city-ipv4.csv.gz) containing the IP <> Geo mapping
   - a row is formatted in the following way
   - ```csv
-    "start_ip","end_ip","country_code","state","city","postal_code","latitude","longitude","timezone"```
+    "ip_range_start, ip_range_end, country_code, state1, state2, city, postcode, latitude, longitude, timezone"```
     216.169.129.0,216.169.129.255,US,California,,San Francisco,94142,37.7809,-122.4245,America/Los_Angeles
 - if any row information is missing, please return an empty string for that field
 - include any database DDL if needed
