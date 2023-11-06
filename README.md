@@ -38,7 +38,6 @@ The API should have at least 3 endpoints:
       country_code: "US"
       timezone: "America/Los_Angeles"
     }
-
 - Use the following file [geo-city-ipv4.csv.gz](geo-city-ipv4.csv.gz) containing the IP <> Geo mapping
   - a row is formatted in the following way
   - ```csv
