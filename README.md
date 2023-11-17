@@ -63,7 +63,7 @@ We will assess your submission based on the following criteria:
 - Documentation
 
 ## Submission
-1) Fork this repo and invite @neel-leendev with your completed solution. 
+1) Clone the repo and make a new **private repo** and invite @neel-leendev with your completed solution. 
 2) Include a link in the README with a short video 3-5 min explaining your solution. I recommend using [Loom](https://www.loom.com/) to record your video.
 3) Shoot me an email when you are ready for me to review your submission.
 
